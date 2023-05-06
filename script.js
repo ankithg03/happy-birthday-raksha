@@ -1,23 +1,4 @@
-window.onload = function() {
-    console.log('aaa')
-    var placeholder = document.querySelector('.placeholder'),
-        small = placeholder.querySelector('img')
-    
-    // 1: load small image and show it
-    var img = new Image();
-    img.src = small.src;
-    img.onload = function () {
-     small.classList.add('loaded');
-    };
-    
-    // 2: load large image
-    var imgLarge = new Image();
-    imgLarge.src = placeholder.dataset.large; 
-    imgLarge.onload = function () {
-      imgLarge.classList.add('loaded');
-    };
-    placeholder.appendChild(imgLarge);
-  }
+
 let renderer,
 scene,
 camera,
@@ -235,5 +216,5 @@ function onWindowResize() {
 // });
 
 document.getElementById("view-gallery")?.addEventListener('click',function () {
-        location.href = "/gallery";
+        location.href = "/gallery/index.html";
     });
