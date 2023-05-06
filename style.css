@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+    background-size: cover;
+    backdrop-filter:  brightness(50%);
+}
+
+canvas {
+    display: block;
+}
+
+#canvas_container {
+    width: 100%;
+    height: 100vh;
+}
+
+button {
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9em;
+    background: #000000;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+.quiz {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translateX(50%);
+    right: 50%;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+.header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+.title {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: large;
+    background: black;
+    text-align: center;
+    margin: auto;
+    padding:1rem;
+    width: 100%;
+}
+.placeholder {
+    background-color: #f6f6f6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .placeholder img {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 1s linear;
+  }
+  
+  .placeholder img.loaded {
+    opacity: 1;
+  }
+  
+  .img-small {
+    filter: blur(50px);
+    /* this is needed so Safari keeps sharp edges */
+    transform: scale(1);
+  }
