@@ -204,5 +204,5 @@ document.getElementById("view-quiz")?.addEventListener('click',function () {
 });
 
 document.getElementById("view-suprise")?.addEventListener('click',function () {
-    location.href = '/index.html';
+    location.href = '/suprise/index.html';
 });
