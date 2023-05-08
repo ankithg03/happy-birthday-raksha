@@ -196,25 +196,13 @@ function onWindowResize() {
     renderer.setSize(container.clientWidth, container.clientHeight);
 }
 
-
-
-/*     Fullscreen btn     */
-// let fullscreen;
-// let fsEnter = document.getElementById('fullscr');
-// fsEnter.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     if (!fullscreen) {
-//         fullscreen = true;
-//         document.documentElement.requestFullscreen();
-//         fsEnter.innerHTML = "Exit Fullscreen";
-//     }
-//     else {
-//         fullscreen = false;
-//         document.exitFullscreen();
-//         fsEnter.innerHTML = "Go Fullscreen";
-//     }
-// });
-
 document.getElementById("view-gallery")?.addEventListener('click',function () {
         location.href = "/gallery/index.html";
     });
+document.getElementById("view-quiz")?.addEventListener('click',function () {
+    location.href = 'https://quiz-for-raksha.vercel.app/';
+});
+
+document.getElementById("view-suprise")?.addEventListener('click',function () {
+    location.href = '/index.html';
+});

@@ -1,0 +1,93 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; visibility: visible; }
+  }
+  
+  div {
+    padding: 2rem;
+  }
+  
+  p {
+    font-family: monospace;
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: typing;
+    animation-duration: 1s;
+    animation-timing-function: steps(200, end);
+    animation-iteration-count: 1;
+
+  }
+  p:nth-child(1) {
+    animation-delay: 0s;
+  }
+  p:nth-child(2) {
+    visibility: hidden;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+  }
+  p:nth-child(3) {
+    visibility: hidden;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+  }
+  p:nth-child(4) {
+    visibility: hidden;
+    animation-delay: 2.4s;
+    animation-fill-mode: forwards;
+  }
+  p:nth-child(5) {
+    visibility: hidden;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+  p:nth-child(6) {
+    visibility: hidden;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+  }
+  
+  .video {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    p {
+        font-family: monospace;
+        font-size: large;
+    }
+    div {
+        padding: .2rem;
+      }
+      .video {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+      }
+  }
+
+/* Global */
+body { color: #f1f1f1; font-family: 'Anonymous Pro', monospace;background-color: #673ab7; }
+
+#navbar {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+  #navbar a{
+    text-align: center;
+    max-width: 900px;
+    margin: 15px auto;
+    font-weight: bolder;
+    color: #edffa4;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-decoration: none;
+  }
+  
