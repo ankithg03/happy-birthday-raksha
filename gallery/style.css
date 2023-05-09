@@ -203,6 +203,12 @@ h2 {
     position: fixed;
     bottom: 0;
     font-family: sans-serif;
-    display: flex;
+    display: block;
     background-color: black;
+}
+.m-p-g__fullscreen.active .message .read-more {
+    display: none;
+}
+.m-p-g__fullscreen.active .message .read-more.active {
+    display: block;
 }
