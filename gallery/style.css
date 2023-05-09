@@ -195,3 +195,14 @@ h2 {
         font-size: 14px;
    }
 }
+.m-p-g__fullscreen .message {
+    display: none;
+}
+.m-p-g__fullscreen.active .message {
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    font-family: sans-serif;
+    display: flex;
+    background-color: black;
+}
